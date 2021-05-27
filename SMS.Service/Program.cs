@@ -19,8 +19,6 @@ namespace SMS.Service
                 .Enrich.FromLogContext()
                 .WriteTo.File(@"C:\Test\Loger.txt")
                 .CreateLogger();
-
-
             try
             {
                 Log.Information("Starting Service");
